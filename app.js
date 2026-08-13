@@ -70,7 +70,7 @@ app.get('/api/work', async (req, res) => {
   await new Promise(resolve => setTimeout(resolve, ms))
 
   if (fail) {
-    return res.status(500).json({ error: 'Error simulado', ms })
+    return res.status(500).json({ error: 'Error simulado 2', ms })
   }
 
   res.json({ ok: true, worked_ms: ms, timestamp: new Date().toISOString() })

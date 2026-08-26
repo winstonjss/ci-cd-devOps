@@ -11,7 +11,7 @@ client.collectDefaultMetrics({ register })
 // Contador de requests totales
 const httpRequestsTotal = new client.Counter({
   name: 'http_requests_total',
-  help: 'Total de requests HTTP',
+  help: 'Total 1 de requests HTTP',
   labelNames: ['method', 'route', 'status'],
   registers: [register]
 })
